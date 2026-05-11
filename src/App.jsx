@@ -821,7 +821,7 @@ export default function App() {
   return (
     <div style={{ minHeight: '100vh', position: 'relative' }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:wght@400;500&family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap');
         
         @keyframes softGlow {
           0%, 100% { opacity: 1; }
@@ -871,7 +871,22 @@ export default function App() {
       <div style={{ position: 'fixed', inset: 0, background: 'radial-gradient(ellipse at 50% 30%, transparent 0%, rgba(0,0,0,0.3) 100%)' }} />
 
       <div style={{ position: 'relative', zIndex: 1 }}>
-        
+
+        {/* MJL TOP BAR */}
+        <div style={{ padding: '12px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+          <div style={{ fontFamily: "'DM Sans', -apple-system, sans-serif", fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,0.35)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+            My Jewish Learning
+          </div>
+          <a
+            href="https://kaddish-hub.vercel.app"
+            style={{ fontFamily: "'DM Sans', -apple-system, sans-serif", fontSize: 13, color: '#B8976A', textDecoration: 'none', opacity: 0.85 }}
+            onMouseEnter={e => e.currentTarget.style.opacity = '1'}
+            onMouseLeave={e => e.currentTarget.style.opacity = '0.85'}
+          >
+            ← Back to Kaddish Hub
+          </a>
+        </div>
+
         {/* HEADER */}
         <header style={{ padding: '32px 48px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
           <div>
