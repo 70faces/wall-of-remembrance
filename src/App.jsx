@@ -908,7 +908,7 @@ export default function App() {
                     paddingBottom: '1px' 
                   }}
                 >
-                  · {rememberingCount} remembering with you today
+                  · {rememberingCount} {rememberingCount === 1 ? 'yahrzeit' : 'yahrzeits'} today
                 </span>
               )}
               {approachingCount > 0 && (
